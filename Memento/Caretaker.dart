@@ -7,7 +7,7 @@ class Caretaker {
   Caretaker(this.mementos) {}
 
   //METODOS
-  Memento getVersion(DateTime date) {
+  dynamic getVersion(DateTime date) {
     var i = 0;
     var found = false;
 
@@ -20,7 +20,7 @@ class Caretaker {
     if (found) {
       return this.mementos[i];
     } else {
-      return Memento.NullMemento(null);
+      return null;
     }
   }
 

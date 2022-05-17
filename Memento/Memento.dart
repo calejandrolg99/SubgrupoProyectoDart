@@ -4,7 +4,6 @@ class Memento<M> {
   M _state;
 
   Memento(this._date, this._state) {}
-  Memento.NullMemento(this._state) {}
 
   //GETTERS Y SETTERS
   DateTime getDate() {
