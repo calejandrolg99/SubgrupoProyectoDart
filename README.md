@@ -2,7 +2,7 @@
 
 ## Dart Subgrupo Desarrollo de Software
 
-| Participante | Commits | Descripcion |
+| Participante | Commits Destacados | Descripcion |
 | :---         |     :---:      |          ---: |
 | Carlos Landaeta   | https://github.com/calejandrolg99/SubgrupoProyectoDart/tree/main/Memento    | Desarrollo del patron de diseño Memento     |
 | Carlos Landaeta   | https://github.com/calejandrolg99/SubgrupoProyectoDart/tree/main/Search     | Desarrollo del componete de busqueda      |
