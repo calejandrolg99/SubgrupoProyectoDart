@@ -41,5 +41,5 @@ abstract class PhoneNumber {
   }
 
   //METODOS ABSTRACTOS
-  getNumber();
+  String getNumber();
 }
