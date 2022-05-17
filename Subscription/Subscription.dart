@@ -1,17 +1,20 @@
-import 'dart:svg';
 import '../PaymentMechanism/PaymentMechanism.dart';
 import 'ModalityEnum.dart';
 
 abstract class Subscription {
   //ATRIBUTOS
-  Number _mount;
+  num _mount;
   String _status;
   Modality _modality;
 
   Subscription(this._mount, this._status, this._modality) {}
 
   //GETTERS Y SETTTERS
-  setMount(Number mount) {
+  num getMount() {
+    return this._mount;
+  }
+
+  setMount(num mount) {
     this._mount = mount;
   }
 
@@ -32,6 +35,6 @@ abstract class Subscription {
   }
 
   //METODOS ABSTRACTOS
-  Number getMount();
+  num getMountSub();
   pay(PaymentMechanism paymentMechanism);
 }

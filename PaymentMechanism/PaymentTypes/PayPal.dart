@@ -1,6 +1,3 @@
-import 'dart:html';
-import 'dart:svg';
-
 import '../PaymentMechanism.dart';
 
 class PayPal implements PaymentMechanism {
@@ -29,7 +26,7 @@ class PayPal implements PaymentMechanism {
 
   //METODOS
   @override
-  pay(Number mount) {
+  pay(num mount) {
     try {
       //SE INTENTA PAGAR
     } catch (e) {

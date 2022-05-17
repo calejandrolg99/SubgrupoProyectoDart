@@ -1,11 +1,9 @@
-import 'dart:svg';
-
 import '../PaymentMechanism.dart';
 
 class CreditCard implements PaymentMechanism {
   //ATRIBUTOS
-  Number _cardNumber;
-  Number _securityCode;
+  num _cardNumber;
+  num _securityCode;
   String _type;
   DateTime _expiration;
 
@@ -13,19 +11,19 @@ class CreditCard implements PaymentMechanism {
       this._cardNumber, this._securityCode, this._type, this._expiration) {}
 
   //GETTERS Y SETTERS
-  Number getCardNumber() {
+  num getCardNumber() {
     return this._cardNumber;
   }
 
-  setCardNumber(Number cardNumber) {
+  setCardNumber(num cardNumber) {
     this._cardNumber = cardNumber;
   }
 
-  Number getSecurityCode() {
+  num getSecurityCode() {
     return this._securityCode;
   }
 
-  setSecurityCode(Number securityCode) {
+  setSecurityCode(num securityCode) {
     this._securityCode = securityCode;
   }
 
@@ -47,7 +45,7 @@ class CreditCard implements PaymentMechanism {
 
   //METODOS
   @override
-  pay(Number mount) {
+  pay(num mount) {
     try {
       //SE INTENTA PAGAR
     } catch (e) {
