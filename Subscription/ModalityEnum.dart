@@ -1,0 +1,1 @@
+enum Modality { Normal, Withbenefits }
