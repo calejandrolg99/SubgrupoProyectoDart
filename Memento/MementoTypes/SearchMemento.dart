@@ -1,21 +1,20 @@
 import '../Memento.dart';
+import '../../Observer/Observer.dart';
 
 class SearchMemento extends Memento {
   //ATRIBUTOS
-  String _navigator; //CAMBIAR STRING POR OBSERVER
+  Observer _navigator;
 
   SearchMemento(this._navigator, DateTime date,
       dynamic state) //CAMBIAR DYNAMIC POR SEARCH
       : super(date, state) {}
 
   //GETTERS Y SETTERS
-  String getNavigator() {
-    //CAMBIAR STRING POR OBSERVER
+  Observer getNavigator() {
     return this._navigator;
   }
 
-  setNavigator(String navigator) {
-    //CAMBIAR STRING POR OBSERVER
+  setNavigator(Observer navigator) {
     this._navigator = navigator;
   }
 }
