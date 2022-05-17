@@ -1,4 +1,6 @@
+import 'dart:svg';
+
 abstract class PaymentMechanism {
   //CONTRATOS
-  pay(num mount);
+  pay(Number mount);
 }
