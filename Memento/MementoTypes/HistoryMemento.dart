@@ -4,7 +4,8 @@ class HistoryMemento extends Memento {
   //ATRIBUTOS
   String _access;
 
-  HistoryMemento(this._access, DateTime date, dynamic state)
+  HistoryMemento(
+      this._access, DateTime date, dynamic state) //CAMBIAR DYNAMIC POR HISTORY
       : super(date, state) {}
 
   //GETTERS Y SETTERS
