@@ -1,9 +1,10 @@
 class Memento<M> {
   //ATRIBUTOS
-  DateTime _date;
+  DateTime _date = DateTime.parse('0000-00-00');
   M _state;
 
   Memento(this._date, this._state) {}
+  Memento.NullMemento(this._state) {}
 
   //GETTERS Y SETTERS
   DateTime getDate() {
@@ -14,7 +15,7 @@ class Memento<M> {
     this._date = date;
   }
 
-  M GetDate() {
+  M getState() {
     return this._state;
   }
 
