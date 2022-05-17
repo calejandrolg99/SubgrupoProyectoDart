@@ -1,8 +1,10 @@
+import '../Notifier/Notifier.dart';
 import 'PhoneNumber.dart';
 import '../Subscription/Subscription.dart';
 import '../PaymentMechanism/PaymentMechanism.dart';
+import '../Observer/Observer.dart';
 
-class Patient {
+class Patient implements Observer {
   //ATRIBUTOS
   String _name;
   num _age;
@@ -75,5 +77,9 @@ class Patient {
 
   deleteNumber(PhoneNumber phone) {
     this._phones.remove(phone);
+  }
+
+  update(Notifier context) {
+    context.send(this);
   }
 }
