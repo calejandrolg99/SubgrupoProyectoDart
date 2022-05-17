@@ -27,5 +27,9 @@ abstract class Search<E, F> implements Originator {
 
   //METODOS
   F search();
-  Memento save();
+
+  Memento save() {
+    Memento m = new Memento(DateTime.now(), this);
+    return m;
+  }
 }
